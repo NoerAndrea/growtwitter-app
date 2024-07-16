@@ -12,6 +12,7 @@ import iconInitialSelected from '../../assets/light_color/icone_pagina_inicial_s
 import iconMain from '../../assets/light_color/logo_growtweet.svg';
 import { ThemeProvider } from "styled-components";
 import closeIcon from '../../assets/light_color/X.svg';
+import avatarDefault from '../../assets/default_profile.webp'
 
 
 
@@ -33,7 +34,7 @@ const lihgtTheme: DefaultTheme={
     fonts:{
         default: "Karla, Roboto, sans-serif"
     },
-    fintSize:{
+    fontSize:{
         small: "1rem",
         medium: "2rem",
         large: "3rem"
@@ -60,6 +61,9 @@ const lihgtTheme: DefaultTheme={
       iconReply: iconReply,
       arrowIcon: arrowIcon,
       closeIcon: closeIcon,
+    },
+    images:{
+        avatar: avatarDefault,
     }
 }
 

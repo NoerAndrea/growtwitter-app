@@ -1,7 +1,7 @@
 import { Title } from "../components/styled-components/Title"
 import { Text } from "../components/styled-components/Text"
 import { SmallText } from "../components/styled-components/SmallText"
-import { ContainerFlex } from "../components/styled-components/Container"
+import { ContainerFlex } from "../components/styled-components/ContainerFlex"
 import { ContainerContent } from "../components/styled-components/ConteinerContent"
 import { LoginCard } from "../components/styled-components/LoginCard"
 import { Card } from "../components/styled-components/Card"
