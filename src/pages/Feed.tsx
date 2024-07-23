@@ -16,6 +16,7 @@ import { NavOut } from "../components/styled-components/NavOut";
 
 import { outLogin } from "../configs/services/growtwetter-api/auth.service";
 import { useNavigate } from "react-router-dom";
+import { Main } from "../components/functional-components/ListAllTweets";
 
 export function Feed() {
   const navigate = useNavigate();
@@ -33,6 +34,7 @@ export function Feed() {
   }
 
   const theme = useTheme();
+
   return (
     <>
       <ContainerPages>
@@ -44,7 +46,7 @@ export function Feed() {
               </Logo>
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="/feed">
                     <img
                       src={theme.icons.iconInitialPage.default}
                       alt="Página Inicial Icon"
@@ -53,7 +55,7 @@ export function Feed() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/explorar">
                     <img
                       src={theme.icons.iconExplore.default}
                       alt="Explorar Icon"
@@ -62,7 +64,7 @@ export function Feed() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/profile">
                     <img
                       src={theme.icons.iconProfile.default}
                       alt="Perfil Icon"
@@ -90,11 +92,7 @@ export function Feed() {
               </NavOut>
             </div>
           </Nav>
-          <main>
-            <div>
-              <p>Oi</p>
-            </div>
-          </main>
+          <Main></Main>
           <Aside>
             <AsideCard>
               <h1>O que está acontecendo?</h1>
@@ -117,7 +115,7 @@ export function Feed() {
                 </li>
               </ul>
               <AsideLink>
-                <a href="#">Mostrar mais</a>
+                <a href="/explore">Mostrar mais</a>
               </AsideLink>
             </AsideCard>
           </Aside>
